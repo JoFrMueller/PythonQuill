@@ -1,0 +1,17 @@
+# --- Server Dependencies ---
+# General purpose webserver, shipping HTML and JavaScript sources
+Flask
+# Allow the webserver to establish a websocket connection via SocketIO
+Flask-SocketIO
+# Required for server's async mode
+gevent
+# To allow gevent on websockets
+gevent-websocket
+
+# --- Client Dependencies ---
+# For the asyncio sender script
+python-socketio[asyncio_client]
+# Required for async HTTP requests aka performance improvement
+aiohttp
+# To allow websocket client pushes directly
+websocket-client
